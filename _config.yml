@@ -1,10 +1,10 @@
 # Site settings
-title:       Pixyll
-email:       your_email@example.com
-author:      John Otander
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
+title:       Ondrej Sramek
+email:       o.sramek@gmail.com
+author:      Ondrej Sramek
+description: "Software developer. Python, Swift, JavaScript."
 baseurl:     ""
-url:         "http://pixyll.com"
+url:         "http://osramek.com"
 
 # Google analytics
 google_analytics:
@@ -12,7 +12,7 @@ google_analytics:
 # Optional features
 animated:           false
 show_related_posts: false
-show_post_footers:  false
+show_post_footers:  true
 
 # Disqus post comments
 # (leave blank to disable Disqus)
@@ -48,7 +48,8 @@ share_hackernews: false
 markdown:     redcarpet
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
-permalink:    pretty
-paginate:     3
+permalink:    '/:title.html'
+paginate:     10
+paginate_path: '/blog/page:num/'
 sass:
   compressed: true
